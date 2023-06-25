@@ -6,7 +6,9 @@ $asrama     = $_POST['asrama'];
 $ka_kamar   = $_POST['ka_kamar'];
 
 
-echo 'Nama :'.$nama.'<br>Nis :'.$nis.'<br>Asrama :'.$asrama.'<br>Ka_Kamar :'.$ka_kamar;
+require_once 'connect.php';
+
+$query = mysqli_query($connect,"INSERT INTO petugas VALUE('', '$nama', '$nis','$asrama', '$ka_kamar')")
 
 
 ?>
