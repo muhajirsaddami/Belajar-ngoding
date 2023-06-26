@@ -8,7 +8,7 @@ $ka_kamar   = $_POST['ka_kamar'];
 
 require_once 'connect.php';
 
-$query = mysqli_query($connect,"INSERT INTO petugas VALUE('', '$nama', '$nis','$asrama', '$ka_kamar')")
+$query = mysqli_query($connect,"INSERT INTO skck VALUE('', '$nama', '$nis','$asrama', '$ka_kamar')")
 
 
 ?>
